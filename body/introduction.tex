@@ -4,75 +4,91 @@
 \section{Background}
 \label{section:background}
 
-A background chapter in a book serves the purpose of providing essential context, information, or history that is relevant
-to the overall understanding of the book's subject matter. This chapter typically appears early in the book and aims to set the
-stage for the reader by offering background details that are crucial for comprehending the main narrative.
+The number of Thai stock investors has expanded substantially over the past 10 years.
+Since 2015, the number of Thai stock investors has more than tripled, increasing from
+approximately 1.2 million to around 4 million in 2024~\cite{SETStatistics2024}.
+This piece of information highlights the growing interest in stock investments among Thai investors.
+
+Despite the significant growth in the number of Thai stock investors, the Thai stock market remains highly volatile,
+often trading in a sideways trend. This market behavior presents a challenging task to achieve exceptional returns,
+requiring extensive research, analysis, and strategic decision-making.
+
+Furthermore, many retail investors often make suboptimal investment decisions, caused by a combination of
+overwhelming information, emotional biases, and market noise. As a result, there is a growing need for tools that can
+improve their investment decisions and reduce the time and effort required.
 
 \section{Problem Statement}
 \label{section:problem-statement}
 
-A problem statement refers to a clear central issue,
-challenge, or question that the project aims to address or explore. It is a
-declaration that highlights the specific problem the author intends to examine,
-discuss, or solve throughout the course of the project.
+Analyzing stocks is a challenging task. Not only is it difficult to identify a good stock, but it also requires substantial time and effort
+to read through reports and financial statements to identify a good company to invest in. Even professional investors with decades of experience
+still take weeks or months to analyze large volumes of information for stock selection.
+
+Apart from picking a good stock to invest in, investors often make emotion-based decisions, especially amateur and novice investors.
+Suboptimal investment decisions increase the risk of capital loss. A good example would be buying stocks that are in a downtrend, thinking the
+price should not go lower, or averaging down in an attempt to maintain their portfolios. However, these suboptimal decisions often lead to
+further capital loss.
 
 \section{Solution Overview}
 \label{section:solution-overview}
 
-A software solution overview provides a high-level and
-concise description of a software product or system. It serves as an
-introduction to the software, offering a glimpse into its key features,
-functionalities, and the problems it aims to address. This overview is often
-presented in documentation, marketing materials, or other communication
-channels to give stakeholders, potential users, or decision-makers a quick
-understanding of what the software does and why it is valuable.
+Value Investing Intelligent Vanguard (VIIV) is a Thai-centric LLM-powered stock analyzer chatbot web application, designed to be an assistant for Thai stock investors,
+aiding in stock analysis and data-driven investment decision-making. It gathers stock-related data from reliable and trusted sources to answer investors' questions with meaningful insights.
+
+It addresses key pain points of Thai stock investors, including overwhelming information and time-consuming stock analysis. By answering stock-related questions,
+VIIV eliminates the need for investors to read through hundred-page-long 56-1 One Reports for each company. It also helps identify stock price trends and professional analysts'
+sentiments to assess investment opportunities and risks.
 
 \subsection{Features}
 \label{subsection:features}
 
 \begin{enumerate}[leftmargin=80pt]
-    \item Feature Name: Short Description of Feature
-    \item Feature Name: Short Description of Feature
+    \item LLM-Powered Thai Stock Analyzer Chatbot: A Thai language-centric large language model chatbot that provides information and insights to aid in stock analysis.
+    \item 56-1 One Report and Financial Statement Analysis: Analyzes yearly 56-1 One Reports and financial statements of companies to evaluate business models, executive strategies, and financial performance.
+    \item Stock Price Trend Identification with Technical Indicators: Identifies stock price trends using technical indicators such as moving averages and moving average convergence divergence (MACD) to determine whether a stock is in an uptrend or downtrend.
+    \item IAA Consensus Sentiment Analysis: Retrieves and analyzes the sentiment of the Investment Analysts Association (IAA) for each stock to assess opportunities and risks based on professional opinions.
 \end{enumerate}
 
 \section{Target User}
 \label{section:target-user}
 
-The target user in a software project refers to the specific
-group or demographic of individuals for whom the software is designed and
-developed. Identifying the target user is a crucial step in the software
-development process as it helps the development team tailor the software to
-meet the needs, preferences, and requirements of that particular user group.
-Understanding the characteristics, behaviors, and expectations of the target
-users is essential for creating a user-friendly and effective software solution.
+Our target users are \textbf{Thai stock investors}. This includes both novice and professional investors.
+This group includes both male and female investors, with an age range of 25 to 50 years old.
+Their education levels vary, but most demonstrate a strong ability to learn.
 
-Here are some key aspects related to defining the target user in a software project:
+Since most of their investing and stock analysis require the use of computers and online tools,
+Thai stock investors have a solid level of technical expertise, allowing them to utilize and adopt advanced investment software.
 
-Demographics: This includes factors such as age, gender,
-occupation, education level, and other demographic characteristics. Different
-age groups or professional backgrounds may have distinct preferences and
-requirements when it comes to software usability.
-
-Skill Level: Consideration of the users' technical proficiency and
-familiarity with similar software or technology. The level of technical expertise
-can influence the complexity of the user interface, the need for tutorials or
-documentation, and other user support features.
-
-Industry or Domain: For software solutions designed for specific
-industries or domains, understanding the unique challenges, workflows, and
-terminology within that industry is crucial. Tailoring the software to meet
-industry-specific needs is often necessary.
+The main goal of Thai stock investors is to achieve high investment returns in the stock market while minimizing capital risk.
+They regularly analyze individual stocks and market trends, seeking to invest in companies with high growth potential.
+This introduces key challenges, including dealing with overwhelming information from large volumes of timely market data,
+which may lead to missed opportunities and emotionally driven investment choices.
 
 \section{Benefit}
 \label{section:benefit}
 
-Describe potential benefits of your solution.
+Value Investing Intelligent Vanguard (VIIV) provides investors with various benefits, primarily by reducing the time and effort
+required to analyze and study stocks. It allows users to ask stock-related questions in Thai and receive instant insights gathered
+from complex financial data.
+
+It helps assess opportunities and risks by identifying the trend of each individual stock using technical indicators
+combining with the professional analysts' consensus. This ensures that investors have a clearer understanding of potential gains and
+losses before making an investment decision.
+
+These benefits enhance investment decision-making and improve investing performance in the stock market. They also help minimize the
+risk of capital loss by informing potential opportunities and risks of a stock in both fundamental and technical aspects.
 
 \section{Terminology}
 \label{section:terminology}
 
-Terminology refers to the specific language, jargon, or
-specialized vocabulary used to describe concepts, ideas, or subjects within a
-particular field or domain. The use of terminology is often essential for clarity
-and precision, especially in books that cover technical, scientific, academic, or
-specialized topics.
+\begin{itemize}
+    \item \textbf{LLM (Large Language Model)}: A type of artificial intelligence model designed to understand and generate human-like text based on vast amounts of data.
+    \item \textbf{56-1 One Report}: A financial document required by the Securities and Exchange Commission of Thailand (SEC) that provides a comprehensive overview of a company's financial performance, operations, and management.
+    \item \textbf{MACD (Moving Average Convergence Divergence)}: A technical indicator used to analyze stock price trends by comparing short-term and long-term moving averages.
+    \item \textbf{IAA (Investment Analysts Association)}: An organization that provides consensus reports and sentiment analysis from professional analysts regarding stock market conditions.
+    \item \textbf{Fundamental Analysis}: A method of evaluating a stock by analyzing financial statements, management effectiveness, industry conditions, and other economic factors.
+    \item \textbf{Technical Analysis}: A stock market analysis approach that uses historical price and volume data to identify trends and make investment decisions.
+    \item \textbf{Downtrend}: A pattern in stock prices where the price consistently moves lower over a period of time.
+    \item \textbf{Uptrend}: A pattern in stock prices where the price consistently moves higher over a period of time.
+    \item \textbf{Sentiment Analysis}: A process of determining the general attitude or opinion of investors and analysts toward a particular stock or market trend.
+\end{itemize}
