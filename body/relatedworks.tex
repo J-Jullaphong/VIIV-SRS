@@ -93,19 +93,19 @@ While Jitta provides a data-driven approach to stock evaluation, investors may s
 
 \FloatBarrier
 
-THaLLE (Text Hyperlocally Augmented Large Language Extension) is a financial large language model (LLM) developed by KBTG, specifically trained using \textbf{Chartered Financial Analyst (CFA) examination} data.
-The model is designed to perform complex financial analyses at a professional CFA-certified level.
-It has been fine-tuned using \textbf{Supervised Fine-Tuning (SFT)} and \textbf{Direct Preference Optimization (DPO)} techniques to enhance its ability to provide financial reasoning and investment insights.
-
-While THaLLE outstands in financial knowledge and analysis tasks, but has several limitations including:
+THaLLE (Text Hyperlocally Augmented Large Language Extension) is a financial large language model (LLM) developed by KBTG, specifically trained using Chartered Financial Analyst (CFA) examination data.
+It is designed to perform high-level financial reasoning and complex investment analysis at a professional CFA-certified level. By incorporating Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO) techniques, 
+THaLLE enhances its ability to provide structured financial insights, making it suitable for institutional and professional investors.
 
 \begin{itemize}[leftmargin=60pt]
-    \item \textbf{Model-Only Availability}: THaLLE is currently available only as an LLM without a user-friendly interface or application for general users. This limits its accessibility for most users.
-    \item \textbf{Not Trained on Thai Financial Data}: THaLLE is optimized for financial reasoning using CFA-based datasets but does not incorporate Thai-specific financial reports such as 56-1 One Reports or SET-listed company disclosures.
-    \item \textbf{Lack of Real-Time Financial Integration}: THaLLE does not have access to live financial market data. This limits its usefulness for time-sensitive investment decisions.
+    \item \textbf{Advanced Financial Reasoning}: Trained on CFA exam materials, THaLLE specializes in complex financial problem-solving, portfolio management, and investment risk assessment.
+    \item \textbf{Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO)}: Uses these machine learning techniques to enhance its accuracy in financial interpretations and decision-making.
+    \item \textbf{AI-Driven Investment Insights}: Capable of analyzing financial concepts such as valuation, risk management, and macroeconomic trends, making it useful for professional financial analysts.
+    \item \textbf{Comprehensive Knowledge Base}: Covers global financial theories, investment principles, and professional-level analytical methodologies.
 \end{itemize}
 
-Despite these limitations, THaLLE represents a significant advancement in financial AI for Thai users, as it provides professional-level financial analysis\cite{THaLLEarXiv}.
+While THaLLE represents a significant advancement in financial AI, its focus on professional financial analysis rather than real-time stock evaluation makes it less practical for Thai retail investors.
+Its lack of Thai financial data and real-time stock insights creates a gap that VIIV aims to fill by providing a chatbot-driven, Thai-centric stock analysis tool\cite{THaLLEarXiv}.
 
 \newpage
 
@@ -142,25 +142,30 @@ the 56-1 One Reports, which are crucial for stock analysis in Thailand\cite{Stoc
     \renewcommand{\arraystretch}{1.5}
     \caption{Comparison of VIIV, Jitta, THaLLE, and StockGPT}
     \label{tab:comparison}
-    \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+    \begin{tabularx}{\textwidth}{|
+        >{\raggedright\columncolor{gray!30}}X |
+        >{\raggedright\arraybackslash}X|
+        >{\raggedright\arraybackslash}X|
+        >{\raggedright\arraybackslash}X|
+        >{\raggedright\arraybackslash}X|}
         \hline
-        \textbf{Feature} & \textbf{VIIV} & \textbf{Jitta} & \textbf{THaLLE} & \textbf{StockGPT} \\
+        \rowcolor{gray!30} \textbf{Feature} & \textbf{VIIV} & \textbf{Jitta} & \textbf{THaLLE} & \textbf{StockGPT} \\
         \hline
         \textbf{Primary Users} & Thai retail \& professional investors & Value investors (Thai \& global) & Thai finance professionals & US stock investors \\
         \hline
-        \textbf{Stock Coverage} & SET (Stock Exchange of Thailand) & Thai \& global stocks & Not stock-specific & S\&P 500, Nasdaq \\
+        \textbf{Stock Coverage} & \cellcolor{yellow!30}SET (Stock Exchange of Thailand) & \cellcolor{yellow!30}Thai \& global stocks & \cellcolor{yellow!30}Not stock-specific & \cellcolor{yellow!30}S\&P 500, Nasdaq \\
         \hline
-        \textbf{AI Capabilities} & LLM-powered chatbot for Thai stocks & AI-based stock ratings \& valuation & CFA-trained LLM for finance & AI-driven analysis of earnings calls \\
+        \textbf{AI Capabilities} & \cellcolor{yellow!30}LLM-powered chatbot for Thai stocks & \cellcolor{yellow!30}AI-based stock ratings \& valuation & \cellcolor{yellow!30}CFA-trained LLM for finance & \cellcolor{yellow!30}AI-driven analysis of earnings calls \\
         \hline
-        \textbf{Financial Reports} & Analyzes Thai 56-1 One Reports \& financial statements & Extracts data from company filings for ratings & Can analyze financial concepts, but lacks stock-specific insights & Focuses on US earnings transcripts \\
+        \textbf{Financial Reports} & \cellcolor{yellow!30}Analyzes Thai 56-1 One Reports \& financial statements & \cellcolor{yellow!30}Extracts data from company filings for ratings & \cellcolor{yellow!30}Can analyze financial concepts, but lacks stock-specific insights & \cellcolor{yellow!30}Focuses on US earnings transcripts \\
         \hline
         \textbf{Sentiment Analysis} & Uses IAA Consensus Sentiment & No sentiment analysis & No sentiment analysis & Analyzes sentiment from earnings calls \\
         \hline
         \textbf{Technical Analysis} & Uses Trend-based Indicators & No technical analysis features & No technical analysis features & No technical analysis features \\
         \hline
-        \textbf{Language Support} & Fully supports Thai & Thai \& English & Limited Thai proficiency & English-only \\
+        \textbf{Language Support} & \cellcolor{yellow!30}Fully supports Thai & \cellcolor{yellow!30}Thai \& English & \cellcolor{yellow!30}Limited Thai proficiency & \cellcolor{yellow!30}English-only \\
         \hline
-        \textbf{Market Data Updates} & Real-time Thai stock market data & Updates 2 days after financial filings & No real-time market data & Live financial updates for US stocks \\
+        \textbf{Market Data Updates} & \cellcolor{yellow!30}Real-time Thai stock market data & \cellcolor{yellow!30}Updates 2 days after financial filings & \cellcolor{yellow!30}No real-time market data & \cellcolor{yellow!30}Live financial updates for US stocks \\
         \hline
         \textbf{User Interface} & Web-based chatbot assistant & Web/mobile-based stock analysis platform & Model-only, lacks user interface & Chatbot-style interface \\
         \hline
